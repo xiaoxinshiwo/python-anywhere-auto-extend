@@ -44,7 +44,7 @@ const config: PlaywrightTestConfig = {
       use: {
         browserName: 'chromium',
         channel: 'chrome',
-        headless: false,
+        headless: true,
         viewport: { width: 1500, height: 720 },
       },
     },
