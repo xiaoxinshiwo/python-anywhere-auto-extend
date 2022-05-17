@@ -14,7 +14,8 @@ test(title, async ({page}) => {
     let userName = USER_NAME || '';
     let password = PASSWORD || '';
     if(!userName || !password){
-        console.log('username or password null, please setup action env params')
+        console.log(`user:${userName}`);
+        console.log('username or password is null, please setup action env params!!!');
         process.exit(0);
     }
     await page.fill('id=id_auth-username', userName);
