@@ -19,11 +19,12 @@ jobs:
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
+      - name: Setup Env
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
+      - name: Run Playwright tests
+        run: npx playwright test
       - uses: actions/upload-artifact@v2
         if: always()
         with:

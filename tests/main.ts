@@ -8,8 +8,9 @@ const {
 
 let title = 'auto_extend_python_anywhere'
 test(title, async ({page}) => {
-    let userName = USER_NAME || 'zhangyongxin';
-    let password = PASSWORD || 'Xiaoxin0223!';
+    let userName = USER_NAME || '';
+    let password = PASSWORD || '';
+    console.log('env', process.env)
     if(!userName || !password){
         console.log(`user:${userName}`);
         console.log('username or password is null, please setup action env params!!!');
