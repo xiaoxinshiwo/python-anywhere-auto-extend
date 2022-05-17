@@ -14,6 +14,7 @@ fork后到Github上添加参数：
 Settings > Actions secrets > New repository secret
 USERNAME [pythonanywhere](https://www.pythonanywhere.com/) 用户名
 PASSWORD [pythonanywhere](https://www.pythonanywhere.com/) 密码
+![image](https://user-images.githubusercontent.com/24218496/168741705-fdfed139-3c27-4948-b055-427de2aeea62.png)
 
 # 效果
 ![image](https://user-images.githubusercontent.com/24218496/168741430-a545eaa7-f27a-4504-8693-e7379e0ea23a.png)
