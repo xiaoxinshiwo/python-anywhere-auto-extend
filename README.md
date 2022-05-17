@@ -1,10 +1,9 @@
 # python-anywhere-auto-extend
 
 # 目的
-迫于"贫穷"，[pythonanywhere](https://www.pythonanywhere.com/)免费版web仅存在3个月的“寿命”，如果需要继续使用需要登录然后手动点击
-![image](https://user-images.githubusercontent.com/24218496/168740692-75377f06-c422-49d2-a091-3a61a7ba5958.png)
-使用playwright框架，自动做上面的事情
-
+迫于"贫穷"，[pythonanywhere](https://www.pythonanywhere.com/)免费版web仅存在3个月的“寿命”，
+如果需要继续使用需要登录然后手动点击。使用playwright框架，自动做上面的事情
+![image](https://user-images.githubusercontent.com/24218496/168744452-443e3552-fd56-4076-8dd6-14ae39f9cc73.png)
 # 如何使用
 ## fork 
 for 当前项目python-anywhere-auto-extend
