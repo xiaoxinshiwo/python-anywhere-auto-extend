@@ -8,16 +8,16 @@ const {
 
 let title = 'auto_extend_python_anywhere'
 test(title, async ({page}) => {
-    // login
-    await page.goto('https://www.pythonanywhere.com/login/');
-    await SelectorUtil.continueWaitFor(page, SelectorUtil.byFullText('h1', 'Log in'));
-    let userName = USER_NAME || '';
-    let password = PASSWORD || '';
+    let userName = USER_NAME || 'zhangyongxin';
+    let password = PASSWORD || 'Xiaoxin0223!';
     if(!userName || !password){
         console.log(`user:${userName}`);
         console.log('username or password is null, please setup action env params!!!');
         process.exit(0);
     }
+    // login
+    await page.goto('https://www.pythonanywhere.com/login/');
+    await SelectorUtil.continueWaitFor(page, SelectorUtil.byFullText('h1', 'Log in'));
     await page.fill('id=id_auth-username', userName);
     await page.fill('id=id_auth-password', password);
     await page.click('id=id_next');
