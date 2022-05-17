@@ -11,7 +11,6 @@ test(title, async ({page}) => {
     let userName = USERNAME || '';
     let password = PASSWORD || '';
     if(!userName || !password){
-        console.log(`user:${userName}`);
         console.log('username or password is null, please setup action env params!!!');
         process.exit(0);
     }
