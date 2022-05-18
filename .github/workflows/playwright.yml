@@ -26,9 +26,3 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
         run: npx playwright test
 
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
