@@ -24,5 +24,7 @@ jobs:
         env:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          USERNAME_PPM: ${{ secrets.USERNAME_PPM }}
+          PASSWORD_PPM: ${{ secrets.PASSWORD_PPM }}
         run: npx playwright test
 
