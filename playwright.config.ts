@@ -13,7 +13,7 @@ import { devices } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   testDir: './tests',
   /* Maximum time one test can run for. */
-  timeout: 60 * 1000,
+  timeout: 60 * 100000,
   testMatch: '*.ts',
   expect: {
     /**
@@ -44,7 +44,7 @@ const config: PlaywrightTestConfig = {
       use: {
         browserName: 'chromium',
         channel: 'chrome',
-        headless: true,
+        headless: false,
         viewport: { width: 1500, height: 720 },
       },
     },
