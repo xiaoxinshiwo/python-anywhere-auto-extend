@@ -23,7 +23,7 @@ test(title, async ({page}) => {
     await page.waitForLoadState('domcontentloaded');
 
     // extend
-    await page.goto(`https://www.pythonanywhere.com/user/${userName}/webapps`);
+    await page.goto(`https://www.pythonanywhere.com/user/${userName}/webapps#tab_id_zhangyongxin_pythonanywhere_com`);
     await SelectorUtil.continueWaitFor(page, "id=main_nav");
     let extendBtn = "//input[@value='Run until 3 months from today']";
     await SelectorUtil.continueClick(page, extendBtn, 3);
